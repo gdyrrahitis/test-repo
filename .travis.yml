@@ -1,24 +1,24 @@
+dist: trusty
+sudo: required
 language: csharp
 mono: none
-dotnet: 2.0.0
+dotnet: "2.0.0"
 solution: test-repo.sln
-env:
+env: 
   - SH=bash
   - PACKAGE_VERSION="1.0.0"
-script:
-  - dotnet restore
-  - dotnet build -c Release --no-restore
- deploy:
-  # require the branch name to be master for deployment
-  skip_cleanup: true
+script: 
+  - "dotnet restore"
+  - "dotnet build -c Release --no-restore"
+deploy: 
   provider: script
-  script: chmod +x deploy.sh && ./deploy.sh $NUGET_API_KEY $NUGET_SOURCE $PACKAGE_VERSION
-  on:
-   branch: master
-
-after_deploy:
- - "git config --global user.email \"builds@travis-ci.com\""
- - "git config --global user.name \"Travis CI\""
- - "export GIT_TAG=$PACKAGE_VERSION"
- - "git tag $GIT_TAG -a -m \"Generated tag $GIT_TAG from TravisCI build $TRAVIS_BUILD_NUMBER\""
- - "git push -quiet https://$GITHUBKEY@https://github.com/gdyrrahitis/test-repo $GIT_TAG"
+  script: "chmod +x deploy.sh && ./deploy.sh $NUGET_API_KEY $NUGET_SOURCE $PACKAGE_VERSION"
+  skip_cleanup: true
+  on: 
+    branch: master
+after_deploy: 
+  - "git config --global user.email \"builds@travis-ci.com\""
+  - "git config --global user.name \"Travis CI\""
+  - "export GIT_TAG=$PACKAGE_VERSION"
+  - "git tag $GIT_TAG -a -m \"Generated tag $GIT_TAG from TravisCI build $TRAVIS_BUILD_NUMBER\""
+  - "git push -quiet https://$GITHUBKEY@https://github.com/gdyrrahitis/test-repo $GIT_TAG"
