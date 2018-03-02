@@ -9,15 +9,14 @@ script:
   - dotnet restore
   - dotnet build -c Release --no-restore
  deploy:
- # require the branch name to be master for deployment
- skip_cleanup: true
- provider: script
- script: chmod +x deploy.sh && ./deploy.sh $NUGET_API_KEY $NUGET_SOURCE $PACKAGE_VERSION
- on:
-  branch: master
+  # require the branch name to be master for deployment
+  skip_cleanup: true
+  provider: script
+  script: chmod +x deploy.sh && ./deploy.sh $NUGET_API_KEY $NUGET_SOURCE $PACKAGE_VERSION
+  on:
+   branch: master
 
 after_deploy:
- # Create GIT TAG
  - "git config --global user.email \"builds@travis-ci.com\""
  - "git config --global user.name \"Travis CI\""
  - "export GIT_TAG=$PACKAGE_VERSION"
