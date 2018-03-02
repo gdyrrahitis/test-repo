@@ -1,0 +1,8 @@
+D:\DEv\Samples\tests\test-repo\bin\Debug\netstandard2.0\test-repo.deps.json
+D:\DEv\Samples\tests\test-repo\bin\Debug\netstandard2.0\test-repo.dll
+D:\DEv\Samples\tests\test-repo\bin\Debug\netstandard2.0\test-repo.pdb
+D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.csproj.CoreCompileInputs.cache
+D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.AssemblyInfoInputs.cache
+D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.AssemblyInfo.cs
+D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.dll
+D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.pdb
