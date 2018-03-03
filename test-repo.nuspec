@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<package>
+<package >
   <metadata>
     <id>gdyrra.test.repo-todelete</id>
-    <version>$version$</version>
+    <version>1.0.0</version>
     <title>Test</title>
     <authors>Test</authors>
     <owners>Test</owners>

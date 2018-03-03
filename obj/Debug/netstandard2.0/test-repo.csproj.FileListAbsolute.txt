@@ -6,3 +6,4 @@ D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.AssemblyInfoIn
 D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.AssemblyInfo.cs
 D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.dll
 D:\DEv\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.pdb
+D:\Dev\Samples\tests\test-repo\obj\Debug\netstandard2.0\test-repo.csprojResolveAssemblyReference.cache

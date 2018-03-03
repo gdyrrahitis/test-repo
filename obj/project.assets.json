@@ -182,12 +182,15 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "D:\\DEv\\Samples\\tests\\test-repo\\test-repo.csproj",
+      "projectUniqueName": "D:\\Dev\\Samples\\tests\\test-repo\\test-repo.csproj",
       "projectName": "test-repo",
-      "projectPath": "D:\\DEv\\Samples\\tests\\test-repo\\test-repo.csproj",
+      "projectPath": "D:\\Dev\\Samples\\tests\\test-repo\\test-repo.csproj",
       "packagesPath": "D:\\.nuget\\packages",
-      "outputPath": "D:\\DEv\\Samples\\tests\\test-repo\\obj\\",
+      "outputPath": "D:\\Dev\\Samples\\tests\\test-repo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
