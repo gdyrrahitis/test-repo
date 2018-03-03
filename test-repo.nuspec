@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>gdyrra.test.repo-todelete</id>
+    <version>$version$</version>
+    <title>Test</title>
+    <authors>Test</authors>
+    <owners>Test</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Test</description>
+    <copyright>Copyright 2018</copyright>
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard2.0\test-repo.dll" target="lib\netstandard2.0\test-repo.dll" />
+  </files>
+</package>
