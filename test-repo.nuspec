@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>gdyrra.test.repo-todelete</id>
-    <version>1.0.1-rc</version>
+    <version>$version$</version>
     <title>GDyrra - Test</title>
     <authors>Test</authors>
     <owners>Test</owners>
