@@ -4,5 +4,5 @@ Version=$3
 
 # dotnet pack ./test-repo.csproj -c Release --no-build --no-restore -o . /p:NuspecFile=test-repo.nuspec /p:PackageVersion=$Version -v d
 # dotnet nuget push ./gdyrra.test.repo-todelete.$Version.nupkg -k $ApiKey -s $Source
-nuget pack -Prop Configuration=Release -Version $Version
+nuget pack -Prop Configuration=Release -Version $Version -Verbosity detailed
 nuget push ./gdyrra.test.repo-todelete.$Version.nupkg -ApiKey $ApiKey -Source $Source
