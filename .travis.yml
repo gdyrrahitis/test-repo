@@ -1,13 +1,15 @@
 dist: trusty
 sudo: required
 language: csharp
-mono: none
 dotnet: "2.0.0"
 solution: test-repo.sln
 env:
  matrix:
   - PACKAGE_VERSION="1.0.0"
-script: 
+install:
+  - curl -L -o nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+script:
+  - mono nuget.exe sources
   - "dotnet restore"
   - "dotnet build -c Release --no-restore"
 deploy:
