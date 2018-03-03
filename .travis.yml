@@ -12,9 +12,10 @@ script:
   - "dotnet restore"
   - "dotnet build -c Release --no-restore"
 deploy:
+  script:
+  - nuget pack ./test-repo.nuspec -Verbosity detailed -Version 1.0.0
+  - nuget push ./test-repo.*.nupkg -Verbosity detailed -ApiKey=$NUGET_SOURCE -Source=$PACKAGE_VERSION
   skip_cleanup: true
-  provider: script
-  script: "chmod +x deploy.sh && ./deploy.sh $NUGET_API_KEY $NUGET_SOURCE $PACKAGE_VERSION"
   on: 
     branch: master
 after_deploy: 
