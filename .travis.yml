@@ -14,8 +14,7 @@ deploy:
   skip_cleanup: true
   provider: script
   script:
-  - dotnet nuget pack ./test-repo.nuspec --no-build /p:PackageVersion=1.0.0 -v d
-  - dotnet nuget push ./test-repo.*.nupkg -k $NUGET_SOURCE -s $PACKAGE_VERSION
+  - chmod +x ./deploy.sh && ./deploy.sh $NUGET_SOURCE $PACKAGE_VERSION
   on: 
     branch: master
 after_deploy: 
